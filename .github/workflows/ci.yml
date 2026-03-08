@@ -47,7 +47,7 @@ jobs:
           images: ${{ env.IMAGE_NAME }}
       - name: Build and push by digest
         id: build
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           provenance: false # avoid unknown/unknown architecture
