@@ -25,7 +25,7 @@ jobs:
             platform: linux/arm64
     steps:
       - name: Check out Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           submodules: true
       - name: Prepare Build
@@ -76,7 +76,7 @@ jobs:
     needs: [build]
     steps:
       - name: Check out Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Download digests
         uses: actions/download-artifact@v4
         with:
